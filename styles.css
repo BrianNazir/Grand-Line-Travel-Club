@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "Oregano";
+    src: url(./resources/Oregano/Oregano-Regular.ttf) format(truetype);
+}
+
+html,
+body {
+    font-family: "Oregano", Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color: #cbf3f0;
+}
+
+.quote,
+.extra,
+.join,
+.mission {
+  margin: 4em auto;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.round {
+    border-radius: 0 0 35px 35px;
+}
+
+.main {
+    height: 30rem;
+    background-image: url(./resources/jack-ward-crop.jpg);
+    background-size: cover;
+}
+
+.main img {
+    width: 15rem;
+    display: block;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.fade {
+    height: 30rem;
+    padding-top: none;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    background-color: #ff9f1c;
+}
+
+nav a {
+    color: #cbf3f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+}
+
+h1 {
+    text-align: center;
+    color: #ff9f1c;
+}
+
+.showcase {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.showcase img {
+    display: block;
+    width: 30%;
+    margin: 1.5%;
+    float: left;
+}
+
+.quote {
+    background-color: #ffbf69;
+    font-size: 2rem;
+    height: 20rem;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote h2 {
+    font-size: 2.5rem;
+}
+
+.join {
+    text-align: center;
+}
+
+.join img {
+    width: 50%;
+    height: auto;
+}
+
+footer {
+    background-color: #ff9f1c;
+    padding: 0 1rem;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5em 0;
+    color: #cbf3f0;
+
+}
+
+@media only screen and (max-width: 960px) {
+  .main {
+    padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .quote h2 {
+    font-size: 2rem;
+  }
+
+  .main nav {
+    font-size: .75rem;
+  }
+
+  .showcase img {
+    width: 100%;
+    margin: 0;
+    
+  }
+
+  footer nav {
+    display: none;
+  }
+}
